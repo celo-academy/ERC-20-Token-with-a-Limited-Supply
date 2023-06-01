@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 Solidity is the primary language for writing smart contracts on the Celo blockchain. In this challenge, you will create a basic ERC-20 token with a limited supply.
 
