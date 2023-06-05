@@ -2,7 +2,6 @@
 pragma solidity 0.8.18;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
-// import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ERC20TokenWithLimitedSupply is ERC20Burnable {
   /**Address of the contract owner
@@ -44,7 +43,7 @@ contract ERC20TokenWithLimitedSupply is ERC20Burnable {
    *    added to the current totalSupply does not surpass the maximium mintable
    *    token.
    * @param amount : Amount to mint
-   * @param to : Address to receive the token.
+   * @param to : Address to receive the token
    */
   function mint(uint amount, address to) public {
     uint maxSupply = 1_000_000 * (10 ** decimals());
